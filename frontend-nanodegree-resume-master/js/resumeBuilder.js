@@ -17,8 +17,8 @@ var bio  = {
 		"name" 		: name,
 		"role"  	: role,
 		"contact" 	: conactGeneric,
-		"contactString" : function () {
-							var contactDetails = this.conactGeneric; 
+		contactString : function () {
+							var contactDetails = this.contact; 
 						    var reBuiltString = ""; 
 							for (var contactProperty in contactDetails) {
 								 reBuiltString  += contactDetails[contactProperty] + ", ";
@@ -51,11 +51,34 @@ var education = {
 	]
 }
 
-$("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
-$("#header").append(HTMLheaderRole.replace("%data%", bio.role));
-$("#header").append(HTMLcontactGeneric.replace("%contact%", bio.contactString));
-$("#header").append(HTMLmobile.replace("%data%", bio.mobile));
-$("#header").append(HTMLemail.replace("%data%", bio.email));
+$("#header").prepend(HTMLheaderName.replace("%data%", bio["name"]));
+$("#topContacts").before(HTMLheaderRole.replace("%data%", bio.role));
+var contactHTML = HTMLcontactGeneric.replace(/%contact%|%data%/gi, 
+												function(matched){
+												  // console.log(matched)
+											  	  if (matched === "%contact%")	
+											      		return "Home Address : ";
+											      else 
+											      	if (matched === "%data%") {
+											      		var cString = bio.contactString();
+											      		return cString; 
+											      	}
+												}
+											);
+console.log(contactHTML);
+$("#topContacts").append(contactHTML);
+// $("#topContacts").append(HTMLcontactGeneric.replace("%data%", bio["contactString"]))
+$("#topContacts").append(HTMLmobile.replace("%data%", bio.mobile));
+$("#topContacts").append(HTMLemail.replace("%data%", bio.email));
+if (bio["skills"].length > 0 ){
+	$("#skillsChart").append(HTMLskillsStart);
+	for (var skill in bio["skills"]) { 
+		// there are some skills in the object.. append them to the skills 
+		 
+		var mySkills = HTMLskills.replace("%data%", bio["skills"][skill].toString() );
+		$("#skills").append(mySkills);
+	}
+}
 
 /* var audacity = "audacity";
 var udacity = audacity.slice(1);
