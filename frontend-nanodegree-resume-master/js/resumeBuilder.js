@@ -80,6 +80,32 @@ if (bio["skills"].length > 0 ){
 	}
 }
 
+var individualLocation = function(X,Y) {  
+							this.pageX  = X;
+							this.pageY  = Y;
+							this.outLocation = function() {
+							 					return this.pageX + ', ' + this.pageY ;
+											    }
+}
+
+var clickLocations = new Array();
+
+function LogClicks(X,Y) {   
+  	var clickedLoc =  new individualLocation(X, Y);
+  	clickLocations.push(clickedLoc);
+}
+
+$(document).click(function(loc){
+	 LogClicks(loc.pageX, loc.pageY);  
+	 // console.log(loc.pageX, loc.pageY); 
+});
+
+$('#listLocations').click(function() {
+    for (var nextLocation in clickLocations) {
+    	console.log(clickLocations[nextLocation].outLocation());
+    }
+});
+
 /* var audacity = "audacity";
 var udacity = audacity.slice(1);
 var udacity = udacity.charAt(0).toUpperCase() + udacity.slice(1);
