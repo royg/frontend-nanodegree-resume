@@ -1,0 +1,100 @@
+bio : {
+
+	"contacts" : {
+		"location": "London, United Kingdom"} ,
+
+
+
+	"Institutes":  [
+					 {
+						"name": "University of Liverpool",
+						"location": "Liverpool, United Kingdom",
+						"course": "Post Graduate Diploma, Software Engineering",
+						"date": "Jan 2004 to Dec 2007",
+						"major": ["Software Engineering"],
+						"url" : "http://www.liv.ac.uk/study/online/programmes/information-technology/msc-in-software-engineering/module-details/",
+						"notes": "<li>This online MSc in Software Engineering comprises six core modules and two elective modules</li>"
+					 },
+					{
+						"name": "National Institute of Business Management (NIBM)",
+						"location": "Colombo, Sri Lanka",
+						"course": "Diploma in Computer Systems Design (DCSD",
+						"date": "Oct 1991 to Jun 1993",
+						"major": ["Information Systems Design"],
+						"url" : "http://http://www.nibm.lk/",
+						"notes": "<li>The course provides the knowledge in Computer Programming and Systems Analysis & Design to Work in Business and Industrial Environments</li>"
+					}
+				  ],
+
+	"online_Institutes": [
+	{
+		"title": "Front-end Web Development Nanodegree",
+		"course": "Udacity",
+		"date": "October 2014 to Current",
+		"url" : "https://www.udacity.com/course/nd001",
+		"classes" : ["Intro to HTML/CSS", "JavaScript Basics", "Intro to jQuery"],
+		"classurl" : ["https://www.udacity.com/course/ud304","https://www.udacity.com/course/ud804","https://www.udacity.com/course/ud245"]
+	} ], 
+
+ 	"Experience": [
+		{
+		"companyName": "MetraTech Corp.",
+		"title": "Business Solutions Manager",
+		"locations": ["London, United Kingdom" , "Boston, MA, USA" ], 
+		"period": "Sept 2007 to date",
+		"desc": "<li>Support sales executives on collateral/technical presentations both face to face and remote; using interactive conference and collaboration tools</li><li>MetraTech Product demonstrations both out of the box functionalities and custom demonstrable configurations using Microsoft Technologies and third party products</li>"
+		},
+
+		{
+		"companyName": "CSG/ Comverse",
+		"title": "Solutions Consultant/Software Engineer",
+		"locations": ["Gibraltar, Gibraltar", "Luxembourg, Luxembourg", "Helsinki, Finland" ],
+		"period": "January 2004 through Sept 2007",
+		"desc": "<li>Consultancy services provided for Four main clients of both CSG and Comverse namely</li><br>
+		         <ul><li>GIB Telecom Gibraltar</li><li>LUX GSM Luxembourg and EPT Luxembourg</li><li>DNA Finland OY</li></ul>"
+		},
+
+	{
+		"companyName": "IBM United Kingdom",
+		"title": "Solutions Consultant/Software Engineer",
+		"locations": ["Helsinki, Finland"],
+		"period": "March 2000 through March 2003",
+		"desc": "<li>Consultancy services provided for one main client of IBM UK and IBM Finland; Telia Finland OY</li>"
+	},
+	{
+		"companyName": "IBM, South Afrida",
+		"title": "Software Engineer",
+		"locations": ["Windhoek, Namibia", "Cape Town, South Africa"] ,
+		"period": "June 1998 through December 1999",
+		"desc": "<li>Consultancy services provided for one main client of IBM South Africa and IBM Namibia; Telecom Namibia</li>"
+	}, 
+
+	{
+		"companyName": "IBM, New Zealand",
+		"title": "Product Specialist/Conversions Analyst",
+		"locations": ["Wellington, New Zealand", "Luxembourg, Luxembourg"] ,
+		"period": "January 1996 through May 1998",
+		"desc": "<li>Product expertise and development solution services provided for multiple IBM clients across the globe, including North America/ South America/ Asia Pacific and collaborations with the out sourced support centre in India</li>"
+	}, 
+
+	{
+		"companyName": "Ebrahiem Khaleel Khanoo",
+		"title": "System Analyst/Developer ",
+		"locations": ["Manama, Bahrain"] ,
+		"period": "February 1995 to January 1996",
+		"desc": "<li>Vehicle distribution and car rental system support development and integration for the country’s biggest distributor for Toyota, Lexus, Hino trucks and Citroen cars</li>"
+	}, 
+
+	{
+		"companyName": "National Institute of Business Management",
+		"title": "System Analyst/Developer ",
+		"locations": ["Colombo, Sri Lanka"] ,
+		"period": "October 1992 through June 1995",
+		"desc": "<li>Supported multiple projects under taken by the Institute, including the largest News paper distributor</li>"
+	}, 
+
+	]
+
+	
+
+}
